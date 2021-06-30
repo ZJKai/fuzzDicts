@@ -1,10 +1,55 @@
 # fuzzDicts
 Web Pentesting Fuzz 字典,一个就够了。
 
-
 ## log 
 
 不定期更新，使用前建议git pull一下，同步更新。
+
+
+  **分享字典建议直接提交PR** 
+
+20210608:
+
+* 在rcePayloads字典下添加了一个[Remote Code Execution ( Unix and Windows )](https://ansar0047.medium.com/remote-code-execution-unix-and-windows-4ed3367158b3)中提到的所有Payload。
+
+20201202:
+
+* 在目录字典下更新了一个[Se7en](https://github.com/r00tSe7en)师傅给的admin目录变种。
+
+20200510:
+
+* 用户名字典下新增了一个百家姓top3000的拼音，去重后188条，Attack!!!.
+
+
+20200420:
+
+* 合并一个由[lanyi1998](https://github.com/lanyi1998)提交的pr，测试常用手机号码top300+，放在用户名字典里面，瓶颈测试时可以试试；添加一份团队Child师傅提供的某集团的弱口令字典。
+
+20200410:
+
+* 新增centOS和AIX主机的/etc/目录的文件列表，放在ssrfDict目录，实战中遇到的，aix和其他系统区别还是蛮大的，作用自己琢磨。
+
+20200406:
+
+* 合并一个由[lewiswu1209](https://github.com/lewiswu1209)提交的pr，密码top19576。
+
+
+20200221:
+
+* 更新由[makoto56](https://github.com/makoto56)师傅加强后的webshell密码字典,离职学习中，毕业前不会有太多的web测试任务（也不想再继续打web了），字典更新频率会降低很多，如果有小伙伴想一起维护可以联系我啊。
+
+20200211:
+
+* 新增一个lot字典，数据来源于tg群里别人发的50w互联网lot设备弱口令，由[sunu11](https://github.com/sunu11)师傅提取，在此基础上添加了国内的数据。遇到不知名的设备时一阵爆怼咯，擅用字典，事半功倍。
+
+20200115:
+
+* xss字典增加burp官方的210条payload，放在easyXssPayload目录下的[burpXssPayload.txt](https://github.com/TheKingOfDuck/fuzzDicts/blob/master/easyXssPayload/burpXssPayload.txt)文件中。
+
+* 用户名字典增加了2018-2020青年安全圈黑阔们的id，数据来源[Security-Data-Analysis-and-Visualization](https://github.com/404notf0und/Security-Data-Analysis-and-Visualization)，分离了id,博客域名,github ID三个字段。放在userNameDict目录下[sec_ID.txt](https://github.com/TheKingOfDuck/fuzzDicts/blob/master/userNameDict/sec_id.txt),遇到shell先去撞一下,自建waf这些id都标记为黑名单关键字就对了。
+
+* 其他优化，更新。
+
 
 20200106:
 
